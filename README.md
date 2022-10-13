@@ -1,10 +1,10 @@
-# Section Field for Craft 3
+# Section Field for Craft 4
 
 This plugin provides a field type for choosing sections. This allows content administrators to select from available singles, channels, and structures. Entries using this field can then access these selections in their templates.
 
 ## Requirements
 
-* Craft CMS 3.0.0-RC1 or above
+* Craft CMS 4.0.0 or above
 
 ## Installation
 
@@ -17,7 +17,7 @@ cd /path/to/project
 2. Require the package to download it via Composer:
 
 ```bash
-composer require charliedev/section-field
+composer require bluestormdesign/section-field
 ```
 
 3. Install the plugin on the `Settings -> Plugins` page in the Craft control panel.

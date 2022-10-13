@@ -4,7 +4,7 @@
  * @copyright Copyright Charlie Development
  */
 
-namespace charliedev\sectionfield\fields;
+namespace bluestormdesign\sectionfield\fields;
 
 use Craft;
 use craft\base\ElementInterface;
@@ -158,7 +158,7 @@ class SectionField extends Field implements PreviewableFieldInterface
 		}
 	}
 
-	public function normalizeValue($value, ElementInterface $element = null)
+	public function normalizeValue($value, ElementInterface $element = null): mixed
 	{
 		// Convert string representation from db into plain array/int.
 		if (is_string($value)) {
@@ -186,7 +186,7 @@ class SectionField extends Field implements PreviewableFieldInterface
 		return $value;
 	}
 
-	public function serializeValue($value, ElementInterface $element = null)
+	public function serializeValue($value, ElementInterface $element = null): mixed
 	{
 		// Convert string IDs to integers for storage.
 		if (is_array($value)) {
@@ -201,7 +201,7 @@ class SectionField extends Field implements PreviewableFieldInterface
 	/**
 	 * Retrieves all sections in an id-name pair, suitable for the underlying options display.
 	 */
-	private function getSections() {
+	private function getSections(): array {
 		$sections = array();
 		foreach (Craft::$app->getSections()->getEditableSections() as $section) {
 			$sections[$section->id] = Craft::t('site', $section->name);
