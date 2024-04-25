@@ -203,7 +203,7 @@ class SectionField extends Field implements PreviewableFieldInterface
 	 */
 	private function getSections(): array {
 		$sections = array();
-		foreach (Craft::$app->getSections()->getEditableSections() as $section) {
+		foreach (Craft::$app->getEntries()->getEditableSections() as $section) {
 			$sections[$section->id] = Craft::t('site', $section->name);
 		}
 		return $sections;

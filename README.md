@@ -1,10 +1,10 @@
-# Section Field for Craft 4
+# Section Field for Craft CMS v4 and v5
 
 This plugin provides a field type for choosing sections. This allows content administrators to select from available singles, channels, and structures. Entries using this field can then access these selections in their templates.
 
 ## Requirements
 
-* Craft CMS 4.0.0 or above
+* Craft CMS ^4.0|^5.0
 
 ## Installation
 
